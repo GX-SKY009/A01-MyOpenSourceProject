@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改学生信息</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/stu/modifyStuInfo.js"></script>
+</head>
+<body bgcolor="#f0ffff">
+<br/><br/><br/>
+<div align="center">
+    <p style="font: inherit ; color: #00bf72;font-size: 24px">修改学生信息</p>
+    <hr class="layui-border-green">
+</div>
+<span th:text="${sno}" hidden id="snoTemp"></span>
+<div>
+    <form id="stuInfoFrom" class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-inline">
+                <input type="text" id="sno" name="sno"
+                       autocomplete="off" class="layui-input" readonly>
+            </div>
+
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-inline">
+                <input type="text" id="sname" name="sname" placeholder="请输入姓名"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">身份证号</label>
+            <div class="layui-input-inline">
+                <input type="text" id="idno" name="idno" placeholder="请输入身份证号"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">年龄</label>
+            <div class="layui-input-inline">
+                <input type="text" id="age" name="age" placeholder="请输入年龄"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-inline">
+                <select id="sex" lay-verify="required" name="sex">
+                    <option value="1">男</option>
+                    <option value="0">女</option>
+                </select>
+            </div>
+
+            <label class="layui-form-label">籍贯</label>
+            <div class="layui-input-inline">
+                <input type="text" id="hometown" name="hometown" placeholder="请输入籍贯"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+
+            <label class="layui-form-label">民族</label>
+            <div class="layui-input-inline">
+                <input type="text" id="nationality" name="nationality" placeholder="请输入民族"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">家庭住址</label>
+            <div class="layui-input-inline">
+                <input type="text" id="address" name="address" placeholder="请输入家庭住址"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-inline">
+                <input type="text" id="phone" name="phone" placeholder="请输入联系方式"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">班级</label>
+            <div class="layui-input-inline" >
+                <select id="sclassno" lay-verify="required" name="sclassno">
+
+                </select>
+            </div>
+        </div>
+
+        <div align="center">
+            <input type='button' value='修改' class='layui-btn layui-anim-rotate' onclick='modifyStuInfo()'></div>
+    </form>
+</div>
+</body>
+</html>

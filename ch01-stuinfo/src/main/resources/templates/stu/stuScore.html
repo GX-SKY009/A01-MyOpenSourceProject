@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学生成绩</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/stu/stuScore.js"></script>
+</head>
+<body bgcolor="#f0ffff">
+<div align="center">
+    <br/><br/><br/>
+  <p style="font-size: 20px;color:forestgreen;">学生成绩</p>
+</div>
+<br/>
+<div align="center">
+    姓名：<span th:text="${sname}"></span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    学号：<span th:text="${sno}"></span>
+</div>
+<hr>
+<div align="center" >
+    <table class="layui-table">
+        <tr align="center">
+            <td>序号</td>
+            <td>编号</td>
+            <td>学期</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>物理</td>
+            <td>化学</td>
+            <td>生物</td>
+            <td>地理</td>
+            <td>历史</td>
+            <td>政治</td>
+            <td>体育</td>
+            <td>音乐</td>
+            <td>实践</td>
+            <td>java</td>
+            <td>cplus</td>
+            <td>python</td>
+            <td>c</td>
+            <td>html</td>
+            <td>css</td>
+            <td>javascript</td>
+            <td>操作</td>
+        </tr>
+        <tbody th:if="${stuScores.get(0).size() > 2}">
+        <tr  th:each="stuScore,stuStat:${stuScores}" align="center">
+            <td th:text="${stuStat.index+1}"></td>
+            <td th:text="${stuScore.id}"></td>
+            <td th:text="${stuScore.semester}"></td>
+            <td th:text="${stuScore.Chinese}"></td>
+            <td th:text="${stuScore.mathematics}"></td>
+            <td th:text="${stuScore.English}"></td>
+            <td th:text="${stuScore.physics}"></td>
+            <td th:text="${stuScore.chemistry}"></td>
+            <td th:text="${stuScore.biology}"></td>
+            <td th:text="${stuScore.geography}"></td>
+            <td th:text="${stuScore.history}"></td>
+            <td th:text="${stuScore.politics}"></td>
+            <td th:text="${stuScore.sports}"></td>
+            <td th:text="${stuScore.music}"></td>
+            <td th:text="${stuScore.practice}"></td>
+            <td th:text="${stuScore.java}"></td>
+            <td th:text="${stuScore.cplus}"></td>
+            <td th:text="${stuScore.python}"></td>
+            <td th:text="${stuScore.c}"></td>
+            <td th:text="${stuScore.html}"></td>
+            <td th:text="${stuScore.css}"></td>
+            <td th:text="${stuScore.javascript}"></td>
+            <td>
+                <button type="button" class="layui-btn" th:onclick="|deleteStuScore(${stuScore.id})|"><i class="layui-icon"></i></button>
+                <button type="button" class="layui-btn" th:onclick="|toModifyStuScore(${stuScore.id},${sno})|"><i class="layui-icon"></i></button>
+
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+    <div th:if="${stuScores.get(0).size() < 2}">
+        <p>该学生还没有成绩信息！</p>
+    </div>
+    <button class="layui-btn layui-btn-primary layui-border-orange" onclick="window.history.go(-1)">返回</button>
+    <button class="layui-btn layui-btn-primary layui-border-blue"><a href="/stu/toStuScoreAdd" target="stuBottom">成绩录入</a></button>
+
+
+
+</div>
+
+</body>
+</html>

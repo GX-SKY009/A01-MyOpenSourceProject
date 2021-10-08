@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/stu/stuAdd.js"></script>
+
+</head>
+<body bgcolor="#f0ffff">
+<br/><br/><br/>
+<div>
+    <form id="stuAddFrom" class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sno" id="sno" required lay-verify="required" placeholder="请输入学号"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sname" id="sname" required lay-verify="required" placeholder="请输入姓名"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">身份证号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="idno" required lay-verify="required" placeholder="请输入身份证号"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-inline">
+                <select name="sex" lay-verify="required">
+                    <option value="1">男</option>
+                    <option value="0">女</option>
+                </select>
+            </div>
+
+            <label class="layui-form-label">籍贯</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hometown" required lay-verify="required" placeholder="请输入籍贯"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+
+            <label class="layui-form-label">年龄</label>
+            <div class="layui-input-inline">
+                <input type="text" name="age" required lay-verify="required" placeholder="请输入年龄"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">民族</label>
+            <div class="layui-input-inline">
+                <input type="text" name="nationality" required lay-verify="required" placeholder="请输入民族"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">家庭住址</label>
+            <div class="layui-input-inline">
+                <input type="text" name="address" required lay-verify="required" placeholder="请输入家庭住址"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">电话号码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="phone" required lay-verify="required" placeholder="请输入电话号码"
+                       autocomplete="off" class="layui-input">
+            </div>
+
+            <label class="layui-form-label">班级</label>
+            <div class="layui-input-inline">
+                <select name="sclassno" id="sclass">
+                    <option value="-1">--暂无班级--</option>
+                </select>
+            </div>
+
+        </div>
+        <br/><br/><br/>
+        <div align="center">
+            <input type="reset" class="layui-btn layui-btn-warm">
+            <input class="layui-btn" type="button" id="stuAddBtn" value="添加">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

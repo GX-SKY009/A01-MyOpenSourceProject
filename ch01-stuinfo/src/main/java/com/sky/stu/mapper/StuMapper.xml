@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sky.stu.mapper.StuMapper">
+
+    <!--按条件查询学生信息-->
+    <select id="queryStuInfo" resultType="java.util.Map">
+        SELECT ts.sno,
+        ts.sname,
+        ts.idno,
+        ts.age,
+        ts.sex,
+        ts.hometown,
+        ts.nationality,
+        ts.address,
+        ts.phone,
+        tc.sclassname,
+        tc.sclassno
+        FROM
+        t_stu ts
+        LEFT JOIN
+        t_class tc
+        ON ts.sclassno = tc.sclassno
+        WHERE 1 = 1
+        <if test="sno != '' and sno != null">
+            and ts.sno = #{sno}
+        </if>
+        <if test="sname != '' and sname != null">
+            and ts.sname LIKE CONCAT(CONCAT('%', #{sname}), '%')
+        </if>
+        <if test="idno != '' and idno != null">
+            and ts.idno LIKE CONCAT(CONCAT('%', #{idno}), '%')
+        </if>
+        <if test="age != '' and age != null">
+            and ts.age = #{age}
+        </if>
+        <if test="sex != '' and sex != null">
+            and ts.sex = #{sex}
+        </if>
+        <if test="hometown != '' and hometown != null">
+            and ts.hometown LIKE CONCAT(CONCAT('%', #{hometown}), '%')
+        </if>
+        <if test="nationality != '' and nationality != null">
+            and ts.nationality LIKE CONCAT(CONCAT('%', #{nationality}), '%')
+        </if>
+        <if test="address != '' and address != null">
+            and ts.address LIKE CONCAT(CONCAT('%', #{address}), '%')
+        </if>
+        <if test="phone != '' and phone != null">
+            and ts.phone LIKE CONCAT(CONCAT('%', #{phone}), '%')
+        </if>
+        <if test="sclassname != '' and sclassname != null">
+            and tc.sclassname LIKE CONCAT(CONCAT('%', #{sclassname}), '%')
+        </if>
+        ORDER BY ts.sno
+        <if test="pageSize != null and pageSize != '' ">
+            LIMIT #{pageIndex},#{pageSize}
+        </if>
+
+    </select>
+    <!--查找学生总数-->
+    <select id="queryStuInfoCount" resultType="int">
+        SELECT COUNT(1)
+        FROM
+        t_stu ts
+        LEFT JOIN
+        t_class tc
+        ON ts.sclassno = tc.sclassno
+        WHERE 1 = 1
+        <if test="sno != '' and sno != null">
+            and ts.sno = #{sno}
+        </if>
+        <if test="sname != '' and sname != null">
+            and ts.sname LIKE CONCAT(CONCAT('%', #{sname}), '%')
+        </if>
+        <if test="idno != '' and idno != null">
+            and ts.idno LIKE CONCAT(CONCAT('%', #{idno}), '%')
+        </if>
+        <if test="age != '' and age != null">
+            and ts.age = #{age}
+        </if>
+        <if test="sex != '' and sex != null">
+            and ts.sex = #{sex}
+        </if>
+        <if test="hometown != '' and hometown != null">
+            and ts.hometown LIKE CONCAT(CONCAT('%', #{hometown}), '%')
+        </if>
+        <if test="nationality != '' and nationality != null">
+            and ts.nationality LIKE CONCAT(CONCAT('%', #{nationality}), '%')
+        </if>
+        <if test="address != '' and address != null">
+            and ts.address LIKE CONCAT(CONCAT('%', #{address}), '%')
+        </if>
+        <if test="phone != '' and phone != null">
+            and ts.phone LIKE CONCAT(CONCAT('%', #{phone}), '%')
+        </if>
+        <if test="sclassname != '' and sclassname != null">
+            and tc.sclassname LIKE CONCAT(CONCAT('%', #{sclassname}), '%')
+        </if>
+    </select>
+
+    <!--根据学生学号删除学生-->
+    <delete id="deleteStuBySno">
+        DELETE
+        FROM t_stu
+        WHERE sno = #{sno};
+        DELETE
+        FROM t_achievement
+        WHERE sno = #{sno}
+    </delete>
+
+    <!--查询所有班级-->
+    <select id="queryClass" resultType="java.util.Map">
+        SELECT sclassno, sclassname
+        FROM t_class
+    </select>
+
+    <!--添加学生-->
+    <insert id="stuAdd">
+        INSERT INTO t_stu (sno, sname
+        <if test="idno != '' and idno != null">
+            , idno
+        </if>
+        , sex
+        <if test="age != '' and age != null">
+            , age
+        </if>
+        <if test="hometown != '' and hometown != null">
+            , hometown
+        </if>
+        <if test="nationality != '' and nationality != null">
+            , nationality
+        </if>
+        <if test="address != '' and address != null">
+            , address
+        </if>
+        <if test="phone != '' and phone != null">
+            , phone
+        </if>
+        , sclassno)
+        VALUES
+        (#{sno}, #{sname}
+        <if test="idno != '' and idno != null">
+            , #{idno}
+        </if>
+        , #{sex}
+        <if test="age != '' and age != null">
+            , #{age}
+        </if>
+        <if test="hometown != '' and hometown != null">
+            , #{hometown}
+        </if>
+        <if test="nationality != '' and nationality != null">
+            , #{nationality}
+        </if>
+        <if test="address != '' and address != null">
+            , #{address}
+        </if>
+        <if test="phone != '' and phone != null">
+            , #{phone}
+        </if>
+        , #{sclassno})
+    </insert>
+
+    <!--查看学生成绩-->
+    <select id="stuScore" resultType="java.util.Map">
+        SELECT ts.sname, ta.*
+        FROM t_achievement ta
+        RIGHT JOIN t_stu ts
+        ON ta.sno = ts.sno
+        WHERE ts.sno = #{sno}
+        <if test="id != null and id != ''">
+            AND ta.id = #{id}
+        </if>
+    </select>
+
+    <!--修改学生信息-->
+    <update id="modifyStuInfo">
+        UPDATE t_stu
+        SET sname       = #{sname},
+            idno        = #{idno},
+            age         = #{age},
+            sex         = #{sex},
+            hometown    = #{hometown},
+            nationality = #{nationality},
+            address     = #{address},
+            phone       = #{phone},
+            sclassno    = #{sclassno}
+        WHERE sno = #{sno}
+    </update>
+
+    <!--查询对应学生对应学期是否有过成绩-->
+    <select id="queryScoreIfExist" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM t_achievement
+        WHERE sno = #{sno}
+          AND semester = #{semester}
+    </select>
+
+    <!--添加学生分数-->
+    <insert id="stuScoreAdd">
+        INSERT INTO t_achievement
+        (sno, semester, Chinese, mathematics, English, physics, chemistry, biology,
+         geography, history, politics, sports, music, practice, java, cplus, python,
+         c, html, css, javascript)
+        VALUES (#{sno}, #{semester}, #{Chinese}, #{mathematics}, #{English}, #{physics}, #{chemistry}, #{biology},
+                #{geography}, #{history}, #{politics}, #{sports}, #{music}, #{practice}, #{java}, #{cplus}, #{python},
+                #{c}, #{html}, #{css}, #{javascript})
+    </insert>
+
+    <!--根据成绩序号删除学生成绩-->
+    <delete id="deleteStuScoreById">
+        DELETE
+        FROM t_achievement
+        WHERE id = #{id}
+    </delete>
+
+    <!--修改学生信息-->
+    <update id="modifyStuScore">
+        UPDATE t_achievement
+        SET semester    = #{semester},
+            Chinese     = #{Chinese},
+            mathematics = #{mathematics},
+            English     = #{English},
+            physics     = #{physics},
+            chemistry   = #{chemistry},
+            biology     = #{biology},
+            geography   = #{geography},
+            history     = #{history},
+            politics    = #{politics},
+            sports      = #{sports},
+            music       = #{music},
+            practice    = #{practice},
+            java        = #{java},
+            cplus       = #{cplus},
+            python      = #{python},
+            c           = #{c},
+            html        = #{html},
+            css         = #{css},
+            javascript  = #{javascript}
+        WHERE id = #{id}
+    </update>
+</mapper>

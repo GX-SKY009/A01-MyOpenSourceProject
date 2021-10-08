@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息查询</title>
+
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/stu/stuInfo.js"></script>
+</head>
+<body bgcolor="#f0ffff">
+<form id="stuAddFrom" class="layui-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">学号</label>
+        <div class="layui-input-inline">
+            <input type="text" id="sno" placeholder="请输入学号"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-inline">
+            <input type="text" id="sname" placeholder="请输入姓名"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">身份证号</label>
+        <div class="layui-input-inline">
+            <input type="text" id="idno" placeholder="请输入身份证号"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">年龄</label>
+        <div class="layui-input-inline">
+            <input type="text" id="age" placeholder="请输入年龄"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">性别</label>
+        <div class="layui-input-inline">
+            <select id="sex" lay-verify="required">
+                <option></option>
+                <option value="1">男</option>
+                <option value="0">女</option>
+            </select>
+        </div>
+
+        <label class="layui-form-label">籍贯</label>
+        <div class="layui-input-inline">
+            <input type="text" id="hometown" placeholder="请输入籍贯"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+
+        <label class="layui-form-label">民族</label>
+        <div class="layui-input-inline">
+            <input type="text" id="nationality" placeholder="请输入民族"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">家庭住址</label>
+        <div class="layui-input-inline">
+            <input type="text" id="address" placeholder="请输入家庭住址"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">联系方式</label>
+        <div class="layui-input-inline">
+            <input type="text" id="phone" placeholder="请输入联系方式"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">班级</label>
+        <div class="layui-input-inline">
+            <input type="text" id="sclassname" placeholder="请输入班级"
+                   autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+<div align="center">
+   <input type="reset" class="layui-btn layui-btn-radius layui-btn-warm" value="清空"/>
+   <input type="button" class="layui-btn layui-btn-radius layui-btn-normal" value="搜索" id="stuSearchBtn"/>
+</div>
+
+</form>
+<hr class="layui-border-red">
+<div align="center">
+    <table class="layui-table">
+        <tr align="center">
+            <td>序号</td>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>身份证号</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>籍贯</td>
+            <td>民族</td>
+            <td>家庭住址</td>
+            <td>联系方式</td>
+            <td>班级</td>
+            <td>操作</td>
+        </tr>
+        <tbody id="tbodyStuInfo" align="center">
+        </tbody>
+    </table>
+    <hr class="layui-border-red">
+    <div id="pagination"></div>
+</div>
+
+</body>
+</html>

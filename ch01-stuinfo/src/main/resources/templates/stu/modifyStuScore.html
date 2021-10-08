@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改学生成绩</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/stu/stuScore.js"></script>
+
+</head>
+<body bgcolor="#f0ffff">
+<div align="center" >
+    <br/><br/><br/>
+    <p style="font: inherit ; color: #00bf72;font-size: 24px">修改学生信息</p>
+    <br/>
+    学生编号：<span th:text="${sno}" id="snoTemp"></span>
+    <hr class="layui-border-green">
+</div>
+<br/><br/>
+<form id="stuScoreFrom"  class="layui-form" th:each="stuScores,stuStat:${stuScores}">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">学期</label>
+        <div class="layui-input-inline">
+            <input type="text" name="semester" id="semester" th:value="|${stuScores.semester}|" required lay-verify="required"
+                   placeholder="请输入学期"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">语文</label>
+        <div class="layui-input-inline">
+            <input type="number" name="Chinese" th:value="|${stuScores.Chinese}|" required lay-verify="required"
+                   placeholder="请输入语文分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">数学</label>
+        <div class="layui-input-inline">
+            <input type="number" name="mathematics" th:value="|${stuScores.mathematics}|" required
+                   lay-verify="required" placeholder="请输入数学分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">英语</label>
+        <div class="layui-input-inline">
+            <input type="number" name="English" th:value="|${stuScores.English}|" required lay-verify="required"
+                   placeholder="请输入英语分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">物理</label>
+        <div class="layui-input-inline">
+            <input type="number" name="physics" th:value="|${stuScores.physics}|" required lay-verify="required"
+                   placeholder="请输入物理分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">化学</label>
+        <div class="layui-input-inline">
+            <input type="number" name="chemistry" th:value="|${stuScores.chemistry}|" required lay-verify="required"
+                   placeholder="请输入化学分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">生物</label>
+        <div class="layui-input-inline">
+            <input type="number" name="biology" th:value="|${stuScores.biology}|" required lay-verify="required"
+                   placeholder="请输入生物分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">地理</label>
+        <div class="layui-input-inline">
+            <input type="number" name="geography" th:value="|${stuScores.geography}|" required lay-verify="required"
+                   placeholder="请输入地理分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">历史</label>
+        <div class="layui-input-inline">
+            <input type="number" name="history" th:value="|${stuScores.history}|" required lay-verify="required"
+                   placeholder="请输入历史分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">政治</label>
+        <div class="layui-input-inline">
+            <input type="number" name="politics" th:value="|${stuScores.politics}|" required lay-verify="required"
+                   placeholder="请输入政治分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">体育</label>
+        <div class="layui-input-inline">
+            <input type="number" name="sports" th:value="|${stuScores.sports}|" required lay-verify="required"
+                   placeholder="请输入体育分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">音乐</label>
+        <div class="layui-input-inline">
+            <input type="number" name="music" th:value="|${stuScores.music}|" required lay-verify="required"
+                   placeholder="请输入音乐分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">实践</label>
+        <div class="layui-input-inline">
+            <input type="number" name="practice" th:value="|${stuScores.practice}|" required lay-verify="required"
+                   placeholder="请输入实践分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">java</label>
+        <div class="layui-input-inline">
+            <input type="number" name="java" th:value="|${stuScores.java}|" required lay-verify="required"
+                   placeholder="请输入java分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">c++</label>
+        <div class="layui-input-inline">
+            <input type="number" name="cplus" th:value="|${stuScores.cplus}|" required lay-verify="required"
+                   placeholder="请输入c++分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">python</label>
+        <div class="layui-input-inline">
+            <input type="number" name="python" th:value="|${stuScores.python}|" required lay-verify="required"
+                   placeholder="请输入python分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">c语言</label>
+        <div class="layui-input-inline">
+            <input type="number" name="c" th:value="|${stuScores.c}|" required lay-verify="required"
+                   placeholder="请输入c语言分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">html</label>
+        <div class="layui-input-inline">
+            <input type="number" name="html" th:value="|${stuScores.html}|" required lay-verify="required"
+                   placeholder="请输入html语言分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">css</label>
+        <div class="layui-input-inline">
+            <input type="number" name="css" th:value="|${stuScores.css}|" required lay-verify="required"
+                   placeholder="请输入css语言分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">javascript</label>
+        <div class="layui-input-inline">
+            <input type="number" name="javascript" th:value="|${stuScores.javascript}|" required
+                   lay-verify="required" placeholder="请输入javascript语言分数"
+                   autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div align="center">
+        <input name="id" hidden type="text" th:value="|${stuScores.id}|">
+        <input type="button" value="修改"  class="layui-btn layui-btn-normal" onclick="modifyStuScore()">
+    </div>
+
+</form>
+
+</body>
+</html>

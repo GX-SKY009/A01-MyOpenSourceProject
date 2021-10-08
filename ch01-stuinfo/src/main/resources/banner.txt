@@ -1,0 +1,56 @@
+;i;;;;;;;;;i;;;;;;;;,;i;;;;,,,,,,,,,,,,,,,,,,,,,;,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;i;iiii;iiiiiiiii
+;i;;;;;;;;;i;;;;;;;;;;,;;,,,,,,,,,,;;,,,,,,,,,,,,,,;,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;i;iiiiiiiiiii
+i;i,,;;;;;;;i;;;;;i;,;;;;;;;,,,,,,,,,,,,,,,:i,,,,,;,,;;ti;;;;;;;;;;i;;;;;;;;;;;;;;;;i;;iiiiiiiiiiiii
+i;;;;;i;;;i;;,;,i;;,;;,;;,;,;;,,,,,,,,,,,j,:,;,;,,,,,;;;;ft;;;;;;;;;;;;;;;;;;;;;;i;;;ii;iiiiiiiiiiii
+iii;i;;;;;;;i,,;,;;,;;;;;;;,,;,,,,,,;,,,i,,,,,,,,,,,,,;;;;jtii;;;;;;;;;;;;;;;;;;;;;;ii;iiiiiiiiiiiii
+ii;i;;;;;;;;;i;;i;;;,,;;;;,;;,,,,,;,,;;;;,,,,,,,,,,,,,,;;;;;j;;;;;;;;;;;;;;;;;;;;;;;;;ii;;iiiiiiiiii
+i;;;;;;;i;;;i;;,;,;;,,;;;;,,,;,;,,,,,,j,;,,,,,,;;i;iii,;;;;;it;;;;;;;;;;;;;;;;;;;;;;;;iiiiii;iiiiiii
+;;iii;;;;i;;;;;,;i;;,;,;,;,,,,,;,,,,,;;:,,,,,,;ittiiii;,,;;;;if;;;;;;;;,;;;;,;;;;;i;;i;i;iiiiiiiiiit
+;i;;i;;;;;;;;;;,;;,;,;,,;,;,,,,,,;;;;;,,,,,,,,,;:i;iiii,;;;;;;;i;;;;;;;;;,;;;;;;;;;i;;ii;;iiiiiiiiii
+;;ii;;;;;;ii;;;;;;;;;;;;,,,,,,,,,;;;.:;,,,,,;i;.LGjf;iti;;;;;;tj;;;;;;,,;;;;;;;;;;i;i;;;iiiiiiiiiiii
+;;;;ii;;;;i;;i;;;;,;,;;;;;;,,,,;,;;t;i,,,,,:ti,:;;,;t,;,;;;;;;;,;i;;;,,;;;,;;;;;;;;;iii;;iiiiiiiiiii
+i;i;;;i;;;;i;;;;;;,;;;;;,,,;,,,,,;,i,,,;,,,,tttt,::,;tfi,;;;;;;;:;;;;;,;;;;;;;;;;;;;iiiiiiiiiiiiiiii
+;i;;i;;;;;;;;;;;,;;;;;;;,,,,,,,,,;,i:,,,,;,L,fj;,:::;LtLj;;;;;i;i;;;;,;;;;;;;;;;;;;;i;i;iiiiiiiiiiii
+i;;;i;i;;;;;;;,i;;;,;;,;;;;,;,,,,,,f;;,,,,,jDGDif,,tiji,G;;;;;iii;;;;;;;;;;;;;;;;;;;;;iiiiiiiiiiiiii
+i;;i;;ii;;;;;;;;,,,;;;,;;,,,,,,,,,;.,,;,,,;D:GjGti,DEDtGt;;;ii;i;;;;;;;;;;;;;;;;;;i;i;i;iiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;,,;;,;,,;,,;,,,,:t,;,,,,,,jii,,;;:,;tiL;;;;ii;fi;;;;;;;;;;;;;;;;i;;;iiiiiiiiiiiiii
+;;;;;;;i,;;;;;;;,;;;;,,;;,,;;,,;,,ji;,,,,,;,LEt;,i;,,ijE,f;;;;;it;;;;;;;;;;;;;;;;;;;ii;iiiiiiiiiiiii
+;;;;ii;;;;;;;;;;;,;;,,,,;,;,,;,,;,fj,,;,,,,;DDD,,;;,,tDftti;;i;ifti;;;;;;;;;;;;;;;;;ii;iiiiiiiiiiiii
+i;;;i;;;;;;;;;;;,,,;;;,,,;;,,;,,;,,,,,;,,,,,LGLi;i;i;Djf;i;;;;;;j;;;;;;;;;;;;;;;iiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;,;;;;,,;,,,,,,;;,;,,,,,,,,tLtji,:;jDEf;;;;;;;.tii;;;i;;;;;;;;;;ii;iiiiiiiiiiiiiiii
+i;;;;;;;;;;;;;;;;;;;,;,,,,,,;,,,,,,;j;,,,,,,itf;tLijLGGL;;;;;i;fji;i;;;;;;;;;;;;i;;ii;iiiiiiiiiiiiii
+;;;i;;;;;;;;;;;;;;;,,,;,,;,,,,,,;;,;i;,,,,,,GjL;jttfDGGGf;;;;;;,j;;;;i;;;;;;;;;;iiii;ii;iiiiiiiiiiii
+;;;;;;;;;;;;;;;;;,;;,,,,,,,,,,,,,,,i;,,,,,,f;Gf;,;ttfGDDL;;;;;jjiii;;;;;;;;;;i;;ii;;iiiiiiiiiiiiiiii
+;;;;;;;;;;;;,;;;,,,,;,,,,.,,,,,;,,,,ii,;,,,LLft;,,tijGtff;;;;;jt;;;:;;;;;;;iii;;ii;i;ii;iiiiiiiiiiii
+;;;;;;;;;;;;,;;;;,;,,,,,,,,,,,,,,;,,,:f;,,,t,i,,,,,;iitf;;;;;j:;;;;;;ii;iit;;;;iiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;,,,;,;,,,,,,,:,,:,,,,,,,tii,i;i;;,,:,,;,;itti;tLi,;i;;;;,i;ijii;iiiii;iiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;,;,,;,,,,,,:;,,,,;,,,,jt;,;;;,,:::,,::,,;,:;Lj;;;i;;;;i,;;;;;iiiii;iiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;,;;;;,;,,,,,,:,,;,,;;,,,ii;,,,;,,,;;,,;;,,,,:;tf;;;;;;;i;t;ii;;iiiiiiiiiiiiiiiiiiiiiii
+i;;;;;;;;;;;;;;;,,,,,,,,,.,,i:.,;,,,,,;,.     ,.;i,;:i;    ::,;;;;;;;;j;i:;ii;iiiiiiiiiiiiiiiiiiiiii
+;;;;;;;,;;;;;;;;;;;,,,,,:,,,,;:,,,,,,,,i::: :ttj.,;,ttit.  .,;;;;;;;i;j;iiii;;iii;iiiiiiiiiiiiiiiiii
+;;;;;;;;;,;;;;i;;,;,;,,;,,,,,;i:,,,,,:,:: : .,i,,,,;i;tt    ,:;;;;;;;tf;i;;iiiiiiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;,;;;,,;;;.,;,,,;:. .. i,i,,,;j;tt  :..,:;;;;:tjii;i;;;;iiiiiiii;iiiiiiiitiiii
+;;;;;;;;;;;;;;;;;;;;,;;;,;;;,,;i,.,,,i ,,  . ;i:ft;titjf:  ,,:i.;;:;;;;i;;;;;;iiiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;;;;;,;;;,i;:,;j. ..  Djtfii,jtfGj:  : .,;;;i;;;;;;;;i;iiiiiii;iiiiiiiiiiiiiii
+;;;;;;;;;;;i;;;;;;;;;i;;;,,;;;;,,ii:;,.j..  jGftij;fitfG:  ..i,;,t;;;;i;;i;i;;ii;iiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,;;j,.  .   .;DfjtjDff,:. ...iij;;;;;;;ii;;i;;;;;;iiiiiiiiiiiiiiiii
+i;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;,;,;;i:   .  :  iitttDG..;:  . :iji;;;;;i;i;;;ii;iiiii;iiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;;;,;i,:. ... f; t..fDG.i;;i:  . .:;i;;i;i;;;;;;i;;iji;iii;iiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;,,;;;;;;;;;;;;:   . .iLt:; . G:ii iiG.... .,ji;;;;ii;iii;;iiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;i.;;;;;;;;;:.   ..ttfjiiijGLG.,;jLLt  .  :;;;;;;i;;;:i;i;i;iiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;i;;;;;;;;;;;,i;;;;;.   .t,;ij,:,,iGLG,;;;;fti .   ,ii;iiiiii;;i;iii;iiiiiiiiiiiiiiiii
+;;;;;;;;;i;;;;;;;;;;;;;,;;;;i.;;;:: jfL;,;i;;;,;;GfL;,;;iti;i:.  .,ii;,tti;;iiii;iii;iiiiiiiiiiiiiii
+;;;;;;;;;;;i;;;;;;;;;;;;;;;;i;;;;ffjjjf;i;;;,;;;;G;fi;;,;;;i;;fj;.,,;iiji;;;ii;iiiiiiiiiiiiiiiiiiiii
+;;;;;ii;ii;i;;;;i;;;;i,;;;;;;;;;;jjttjj;;;;;;;i:, tfGi;;;,;;;;fjtjjti;;iiiii;ii;iiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;i;;;;;;;;;;;;;;;tttit;;;;;i;,:,.jGL;;i;;;,;;jtjt;;;;ii;;i;i;;;iiiiiii;iiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;i;;;,ttijiiii,,:::.:.DG,;i,ii;;ijtt;;iiiiiiii;i;iiiiiiiiiiiiiiiiiiiiii
+i;;;;;;;;;;;;;;;;;ii;;;;;;;;;;;;;;;;tii;,:::.  .:.,ff,::i,;tijtt;iiiiiii;ii;i;;iiiiiiiiiiiiiiiiiiiii
+;;;;;;;;i;;;;;;;;;;i;;;;;;;;;;;;;;;;;;ii,:.:     . Lf,. .;,;jfiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;ii;;;;;;;;;;;;;;;;;;;;.. . .   . Li,.  .,,iittiiiiiii;iiiiii;iiiiiiiiiiiiiiiiiiiii
+;;;;;;;i;i;i;;;;;;;;;;;;;;i;;;;;;;;;;;;:::.      . .j:.  .:,;iiiiiiii;iii;i;;i;iiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;.,:.    . .   :  . .,,;iiiii;iiiii;;i;iiiiiiiiiiiiiiiiiiiiiii
+;;;;;;;;;;;;;;;;;;;i;;;i;;;;;i;;;;;;;;,.,:. .  . ... .  : ::,;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiitiiit
+
+                                         学生信息管理系统
+                                          作者：云上幻歌
+                                         QQ：2690607247

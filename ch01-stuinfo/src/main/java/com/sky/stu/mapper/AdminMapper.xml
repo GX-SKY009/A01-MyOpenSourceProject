@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sky.stu.mapper.AdminMapper">
+
+    <!--登录系统-->
+    <select id="login" resultType="java.util.Map">
+        SELECT tno, tname, tpassword, admin, email, phone
+        FROM t_teacher
+        WHERE tno = #{tName}
+          AND tpassword = #{tPassword} LIMIT 1
+    </select>
+
+    <!--修改信息-->
+    <update id="reModifyAdminInfo">
+        UPDATE t_teacher
+        SET tname = #{tname},
+        tpassword = #{tpassword},
+        phone = #{phone},
+        email = #{email}
+        <if test="admin != null and admin != ''">
+            ,admin = #{admin}
+        </if>
+        WHERE tno = #{tno}
+    </update>
+
+    <!--查找教师信息-->
+    <select id="queryAdminInfo" resultType="java.util.Map">
+        SELECT tno,tname,tpassword,email,admin,phone FROM t_teacher
+        WHERE 1 = 1
+        <if test="tno != null and tno != ''">
+            AND tno = #{tno}
+        </if>
+        <if test="tname != null and tname != ''">
+            AND tname LIKE CONCAT(CONCAT('%', #{tname}), '%')
+        </if>
+        <if test="phone != null and phone != ''">
+            AND phone LIKE CONCAT(CONCAT('%', #{phone}), '%')
+        </if>
+        <if test="email != null and email != ''">
+            AND email LIKE CONCAT(CONCAT('%', #{email}), '%')
+        </if>
+        <if test="admin != null and admin != ''">
+            AND admin LIKE CONCAT(CONCAT('%', #{admin}), '%')
+        </if>
+        <if test="pageSize != null and pageSize != '' ">
+            LIMIT #{pageIndex},#{pageSize}
+        </if>
+
+    </select>
+
+    <!--查找教师信息 总数-->
+    <select id="queryStuInfoCount" resultType="java.lang.Integer">
+        SELECT COUNT(1) FROM t_teacher
+        WHERE 1 = 1
+        <if test="tno != null and tno != ''">
+            AND tno = #{tno}
+        </if>
+        <if test="tname != null and tname != ''">
+            AND tname LIKE CONCAT(CONCAT('%', #{tname}), '%')
+        </if>
+        <if test="phone != null and phone != ''">
+            AND phone LIKE CONCAT(CONCAT('%', #{phone}), '%')
+        </if>
+        <if test="email != null and email != ''">
+            AND email LIKE CONCAT(CONCAT('%', #{email}), '%')
+        </if>
+        <if test="admin != null and admin != ''">
+            AND admin LIKE CONCAT(CONCAT('%', #{admin}), '%')
+        </if>
+    </select>
+
+    <!--删除教师（管理员）-->
+    <delete id="deleteAdmin">
+        DELETE
+        FROM t_teacher
+        WHERE tno = ${tno}
+    </delete>
+
+    <!--添加教师-->
+    <insert id="adminAdd">
+        INSERT INTO t_teacher (tno, tname, tpassword, phone, email, admin)
+        values (#{tno}, #{tname}, #{tpassword}, #{phone}, #{email}, #{admin})
+    </insert>
+</mapper>

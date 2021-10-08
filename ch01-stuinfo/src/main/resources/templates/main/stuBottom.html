@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统首页</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+</head>
+<body>
+<div class="layui-carousel" id="systemHome">
+    <div carousel-item>
+        <div><img width="100%" src="/imgs/home/home1.jpg"></div>
+        <div><img width="100%" src="/imgs/home/home3.jpg"></div>
+    </div>
+</div>
+</body>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#systemHome'
+            ,width: '100%' //设置容器宽度
+            ,full:true
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</html>

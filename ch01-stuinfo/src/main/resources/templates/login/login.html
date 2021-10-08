@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>登录</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="/css/login/login.css" rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+<h1>学生信息管理系统</h1>
+<div class="w3ls-login box">
+    <img src="/imgs/login/logo.png" alt="logo_img"/>
+
+    <form action="login" method="post">
+        <div class="agile-field-txt">
+            <div align="center"><p th:text="${err}" style="color: red"></p></div>
+            <input type="text" name="username" placeholder="您的账号" required=""/>
+        </div>
+        <div class="agile-field-txt">
+            <input type="password" name="password" placeholder="您的密码" required="" id="myInput"/>
+        </div>
+        <div class="w3ls-bot">
+            <input type="submit" value="登录">
+        </div>
+    </form>
+</div>
+<div class="copy-wthree">
+    </p>
+</div>
+</body>
+
+</html>

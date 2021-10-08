@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息系统头部</title>
+    <link rel="stylesheet" href="/js/currency/layui/css/layui.css">
+    <script type="text/javascript" src="/js/currency/jQuery-3.5.1.min.js"></script>
+    <script src="/js/currency/layui/layui.js"></script>
+</head>
+<body bgcolor="#faebd7">
+<br/>
+
+<div align="center">
+    <p style="font-size:  26px ;color: chocolate">学生信息管理系统</p>
+    <i class="layui-icon layui-icon-username">&nbsp;<font color="#008b8b" th:text="${session.admin.get('tname')}"></font></i>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="layui-icon layui-icon-logout" title="退出系统">&nbsp;<a href="/logout" target="_top">注销</a></i>
+</div>
+<ul class="layui-nav" lay-filter="">
+    <li class="layui-nav-item layui-this" ><a href="/stu/stuBottom" target="stuBottom">首页</a></li>
+    <li class="layui-nav-item"><a href="/stu/stuInfo" target="stuBottom">学生信息</a></li>
+    <li class="layui-nav-item"><a href="/stu/toStuAdd" target="stuBottom">添加学生</a></li>
+    <li class="layui-nav-item"><a href="/stu/toStuScoreAdd" target="stuBottom">成绩录入</a></li>
+    <li class="layui-nav-item"><a href="/admin/toAdminInfo" target="stuBottom">个人信息</a></li>
+    <li class="layui-nav-item" th:if="${session.admin.get('admin') == 1}"><a href="/admin/adminManage"  target="stuBottom">教师管理</a></li>
+</ul>
+</body>
+</html>
